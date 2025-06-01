@@ -3,6 +3,11 @@
 This project focuses on route planning for drones under strict constraints such as battery limits, no-fly zones, weight capacity, and delivery time windows.  
 Two main algorithms are implemented and compared: A* + CSP and Genetic Algorithm (GA).
 
+[![Project Report](https://img.shields.io/badge/Report-grup28__rapor.pdf-blue)](https://github.com/miraygurbuz/Drone-Delivery-Optimization/blob/main/grup28_rapor.pdf)
+[![Visualizations](https://img.shields.io/badge/Visualizations-PNGs-green)](https://github.com/miraygurbuz/Drone-Delivery-Optimization/tree/main/src/results/figures)
+
+> You can find the full project report and route visualizations using the badges above.
+
 ## Setup & Run
 
 * ### Clone the repository:
@@ -98,11 +103,13 @@ You can run a predefined test suite using the `performance_tester.py` script:
 ```
 python src/performance_tester.py
 ```
+
 This script will:
 
 - Run A* and GA for two randomized scenarios
 - Generate a detailed performance report
 - Save outputs to:
+  
   - `performance_comparison.png` (chart)
   - `performance_report.txt` (summary text)
   - `performance_results.json` (raw data)
