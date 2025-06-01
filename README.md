@@ -113,9 +113,3 @@ This script will:
   - `performance_comparison.png` (chart)
   - `performance_report.txt` (summary text)
   - `performance_results.json` (raw data)
-
-Scenario      | A* Completion | GA Completion | Fastest | Most Deliveries
---------------|---------------|---------------|---------|------------------
-5 drones, 20 deliveries | 100%       | 100%       | A*   | Draw
-10 drones, 50 deliveries| 52%       | 100%       | A*   | GA
-
