@@ -22,7 +22,15 @@ cd Drone-Delivery-Optimization
 ```
 pip install -r requirements.txt
 ```
-* ### Run the main simulation:
+
+### Run Options:
+
+* #### GUI Interface
+Launch the graphical user interface for easy simulation management:
+```bash
+python src/gui.py
+```
+* #### Command Line Interface
 
 If you're using Git Bash / Linux / macOS:
 
@@ -62,11 +70,11 @@ The delivery map is represented as a directed graph built from delivery nodes.
 
 - **Nodes**: Delivery points
 - **Edges**: All-to-all connections with custom cost calculations
-- **Cost Formula**:  
+- **Cost Formula**:
+ 
   `cost = distance × weight + (priority × 100)`
 
-- **No-Fly Zone Penalty**:  
-  If a path intersects an active NFZ, a penalty is added to discourage the route.
+- **No-Fly Zone Penalty**:  If a path intersects an active NFZ, a penalty is added to discourage the route.
 
 Each node stores:
 - Target delivery ID (`to`)
